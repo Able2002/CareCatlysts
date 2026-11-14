@@ -1,0 +1,43 @@
+Problem_Statement.pdf
+
+# Superpowers session spec/plan files (keep local, never commit)
+docs/superpowers/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# uv — lockfile IS committed (reproducible installs)
+
+# Secrets — never commit
+.env
+.env.local
+
+# Databases
+*.db
+data/*.db
+
+# Archives
+*.zip
+
+# Generated data
+data/generated/
+
+# Trained model artifacts (demand_lightgbm.txt, metrics.json, ...) ARE tracked
+# so Railway deploys can load the model without retraining on first request.
+
+# Supabase local state
+supabase/.temp/
+supabase/.branches/
+
+# Node (Phase 2)
+node_modules/
+dist/
+
+# macOS
+.DS_Store
